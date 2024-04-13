@@ -1,0 +1,77 @@
+class car:
+  name="BMW"
+  model="2000"
+  def info(self, city ):
+    print(self.name , self.model,city)
+e1=car()
+e2=car()
+city='jaipur'
+e1.info(city)
+     
+BMW 2000 jaipur
+
+class employee:
+
+  def initialize(self,N,D):
+    self.N=N
+    self.D=D
+    print(self.N,self.D)
+    def address (self,city):
+      print(city)
+
+
+e1=employee()
+e1.initialize("kittu","ceo")
+     
+kittu ceo
+
+class rectangle:
+  def area(self,l,b):
+    self.l = l
+    self.b=b
+    print(self.l*self.b)
+e1=rectangle()
+e1.area(10,5)
+     
+50
+
+#wap to use a class to calculate area and perimter of a square
+class shape:
+  def area(self,l):
+    self.l = l
+    print("the area of square is ",self.l*self.l)
+  def perimeter(self , b):
+    self.b = b
+    print("the perimeter of the square is ",4*self.b*self.b)
+e1 = shape()
+m = int (input ("enter the side of the square"))
+e1.area(m)
+e1.perimeter(m)
+
+
+     
+enter the side of the square12
+the area of square is  144
+the perimeter of the square is  576
+
+class FactorialCalculator:
+    def calculate_factorial(self, n):
+        if n < 0:
+            return "Factorial is not defined for negative numbers"
+        elif n == 0:
+            return 1
+        else:
+            result = 1
+            for i in range(1, n + 1):
+                result *= i
+            return result
+
+
+calculator = FactorialCalculator()
+number = int(input("enter the number "))
+factorial_result = calculator.calculate_factorial(number)
+print(factorial_result3)
+
+     
+enter the number 5
+120
