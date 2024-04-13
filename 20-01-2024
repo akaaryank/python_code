@@ -1,0 +1,146 @@
+print("welcome to python code")
+print('different type of code using program')
+num1=input('Enter the value of first varible')
+num2=input('enter the value of second variable')
+a=int(num1)
+b=int(num2)
+print("all arihmetic operations")
+print("a+b",a+b)
+print("a-b",a-b)
+print("a*b",a*b)
+print("a**b",a**b)
+print("a/b",a/b)
+print("a//b",a//b)
+print("a%b",a&b)
+print("all comparsion operations are ")
+print("a==b",a==b)
+print("a!=b",a!=b)
+print("a>=b",a>=b)
+print("a<=b",a<=b)
+print("ab",a>b)
+print("all bitwise operations are ")
+
+print("a&b",a&b)
+print("a|b",a|b)
+print("a^b",a^b)
+print("a<<2",a<<2)
+print("b>>2",b>>2)
+print('~a',~a)
+
+print("all logical operations are ")
+a1 = True
+b1 = False
+print(a1 and b1)
+print(a1 or b1)
+print(not a1)
+print('use of assigment operator')
+a2 = 10
+b2 = a2
+print("value of b2",b2)
+b2 += a2
+print("b2 +=a2",b2)
+b2 -= a2
+print("b2 -=a2",b2)
+b2 *= a2
+print("b2*=a2",b2)
+b2 <<= a2
+print("b2<<=a2",b2)
+b2 >>=a2
+print("b2>>=a2",b2)
+
+
+     
+welcome to python code
+different type of code using program
+Enter the value of first varible 11
+enter the value of second variable11
+all arihmetic operations
+a+b 22
+a-b 0
+a*b 121
+a**b 285311670611
+a/b 1.0
+a//b 1
+a%b 11
+all comparsion operations are 
+a==b True
+a!=b False
+a>=b True
+a<=b True
+a<b False
+a>b False
+all bitwise operations are 
+a&b 11
+a|b 11
+a^b 0
+a<<2 44
+b>>2 2
+~a -12
+all logical operations are 
+False
+True
+False
+use of assigment operator
+value of b2 10
+b2 +=a2 20
+b2 -=a2 10
+b2*=a2 100
+b2<<=a2 102400
+b2>>=a2 100
+
+#WAP to make a calculator that does all arithmetci and logical operation
+num1=input('Enter the value of first varible')
+num2=input('enter the value of second variable')
+a=int(num1)
+b=int(num2 )
+print("all arihmetic operations")
+print("a+b",a+b)
+print("a-b",a-b)
+print("a*b",a*b)
+print("a**b",a**b)
+print("a/b",a/b)
+print("a//b",a//b)
+print("a%b",a&b)
+print("all comparsion operations are ")
+print("a==b",a==b)
+print("a!=b",a!=b)
+print("a>=b",a>=b)
+print("a<=b",a<=b)
+print("ab",a>b)
+if not a:
+    print("Boolean value of a is True")
+if not (a%3 == 0 or a%5 == 0):
+    print("10 is not divisible by either 3 or 5")
+else:
+    print("10 is divisible by either 3 or 5")
+    print("all logical operations are ")
+
+a1 = True
+b1 = False
+print(a1 and b1)
+print(a1 or b1)
+print(not a1)
+
+     
+Enter the value of first varible 10 
+enter the value of second variable20
+all arihmetic operations
+a+b 30
+a-b -10
+a*b 200
+a**b 100000000000000000000
+a/b 0.5
+a//b 0
+a%b 0
+all comparsion operations are 
+a==b False
+a!=b True
+a>=b False
+a<=b True
+a<b True
+a>b False
+10 is divisible by either 3 or 5
+all logical operations are 
+False
+True
+False
