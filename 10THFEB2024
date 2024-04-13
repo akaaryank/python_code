@@ -1,0 +1,118 @@
+def fun1(n):
+  c=1
+  if( n==0 or n==1 ):
+    return 1
+  for i in range(2,n+1):
+    c=c*i
+  return c
+fun1(4)
+     
+24
+
+# write a program to print fibonnaic series
+def fibonacci(n):
+    a = 0
+    b = 1
+
+
+
+    if n < 0:
+        print("Incorrect input")
+
+
+
+    elif n == 0:
+        return 0
+
+
+    elif n == 1:
+        return b
+    else:
+        for i in range(1, n):
+            c = a + b
+            a = b
+            b = c
+        return b
+
+
+print(fibonacci(9))
+     
+34
+
+def num_1(n):
+  num_1=int(input("enter the number:"))
+  if num_1%2==0:
+    print("the given number is even")
+  else:
+    print("the given number is odd")
+  if num_1>1:
+   for i in range(2,int(n/2)+1):
+      if (num_1%i)==0:
+          print("the given number is prime")
+      else:
+          print("the given is not a prime number")
+num_1(6)
+
+     
+enter the number:5
+the given number is odd
+the given is not a prime number
+the given is not a prime number
+
+def greet(n):
+  if(n==0 or n==1):
+    return 1
+
+  else:
+   return n*greet(n-1)
+greet(5)
+
+
+
+
+     
+120
+
+#wap to print fibbonaic series using recusrion
+def Fibonacci(n):
+
+    if n<= 0:
+        print("Incorrect input")
+
+    elif n == 1:
+        return 0
+
+    elif n == 2:
+        return 1
+    else:
+        return Fibonacci(n-1)+Fibonacci(n-2)
+print(Fibonacci(10))
+     
+34
+use of lambda
+
+
+
+def cube(y):
+    return y*y*y
+
+lambda_cube = lambda y: y*y*y
+print("Using function defined with `def` keyword, cube:", cube(5))
+print("Using lambda function, cube:", lambda_cube(5))
+
+     
+Using function defined with `def` keyword, cube: 125
+Using lambda function, cube: 125
+
+#write a program to find sum of list using recursion
+def func(numbers):
+    if not numbers:
+        return 0
+    else:
+       return numbers[0] + func(numbers[1:])
+elements = [1, 2, 3, 4, 5]
+total_sum = func(elements)
+print(f"The sum of elements in the list is: {total_sum}")
+
+     
+The sum of elements in the list is: 15
