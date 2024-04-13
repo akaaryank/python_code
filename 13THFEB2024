@@ -1,0 +1,25 @@
+#wap to extract even and odd umber from a list
+list1 = [10, 21, 4, 45, 66, 93, 11]
+
+even_nos = list(filter(lambda x: (x % 2 == 0), list1))
+
+print("Even numbers in the list: ", even_nos)
+odd_nos = list(filter(lambda x: (x % 2 != 0), list1))
+print("odd numbers in the list: ", odd_nos)
+
+     
+Even numbers in the list:  [10, 4, 66]
+odd numbers in the list:  [21, 45, 93, 11]
+
+list1 = [10, 21, 4, 45, 66, 93]
+
+even_nos = [num for num in list1 if num % 2 == 0]
+
+print("Even numbers in the list: ", even_nos)
+
+odd_nos = [num for num in list1 if num % 2 != 0]
+
+print("odd numbers in the list: ", odd_nos)
+     
+Even numbers in the list:  [10, 4, 66]
+odd numbers in the list:  [21, 45, 93]
