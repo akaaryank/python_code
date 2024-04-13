@@ -1,0 +1,91 @@
+class A:
+  def __init__(self,a):
+    self.name=a
+    print("I am insdie the init of class A")
+
+  def showA(self):
+    print("insde showA of A")
+
+  def attrib(self):
+    print(self.name)
+
+a1=A("kushagra")
+a1.name
+a1.showA()
+a1.attrib()
+
+
+     
+I am insdie the init of class A
+insde showA of A
+kushagra
+
+class A:
+  def __init__(self,a):
+    self.name=a
+    self.MD=self.B()
+    print("I am insdie the init of class A")
+
+  def showA(self):
+    print("insde showA of A")
+
+  def attrib(self):
+    print(self.name)
+  class B:
+    def __init__(self):
+      print("hello")
+    def showb(self):
+      print("kaise ho")
+a1 = A("hi")
+a1.B()
+a2=a1.MD
+a2.showb()
+     
+hello
+I am insdie the init of class A
+hello
+kaise ho
+
+class A:
+  def __init__(self,a):
+    self.name=a
+    self.MD=self.B()
+    print("I am insdie the init of class A")
+
+  def showA(self):
+    print("insde showA of A")
+
+  def attrib(self):
+    print(self.name)
+  class B(A):
+    def __init__(self):
+      print("hello")
+    def showb(self):
+      print("kaise ho")
+a1 = A("hi")
+a1.B()
+a1.showA()
+     
+hello
+I am insdie the init of class A
+hello
+insde showA of A
+
+class parent():
+  def value(self):
+    print("Parent's class")
+class son():
+  def value(self):
+    print("inheritance class")
+class daughter (son,parent):
+  def values(self):
+    print("jai mata di")
+c1=daughter()
+c1.value()
+c1.value()
+c1.value()
+
+     
+inheritance class
+inheritance class
+inheritance class
