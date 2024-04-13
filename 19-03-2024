@@ -1,0 +1,105 @@
+class employee:
+  name ="sajid"
+  sapid=50012
+  def info(self):
+    print(self.name,self.sapid)
+e1=employee()
+e1.info()
+     
+sajid 50012
+
+#inner class
+class employee:
+  name ="sajid"
+  sapid=50012
+  def info(self):
+    print(self.name,self.sapid)
+  class activity:
+    def info(self):
+      print("jinga lala hu hu")
+e1=employee()
+e1.info()
+e2=employee.activity()
+e2.info()
+e3=activity()
+e3.info()
+     
+sajid 50012
+jinga lala hu hu
+jinga lala hu hu
+
+class AssiantProfessor:
+  def __int__(self,name,Id):
+    self.name=name
+    self.Id=Id
+    def show():
+      print(f"my name is :{self.name}")
+      print(f"my id is :{self.Id}")
+  class details():
+    def show(self):
+      print("jinga la la hu hu")
+AP=AssiantProfessor.details()
+AP.show()
+
+     
+jinga la la hu hu
+
+class AssistantProfessor:
+  def __init__(self,name,Id):
+    self.name=name
+    self.Id=Id
+    self.MD=self.Details()
+  def show(self):
+   # print(f"my name is :{self.name}")
+    #print(f"my id is :{self.Id}")
+    print(self.name,self.Id)
+  class Details:
+    def show(self):
+      print("jinga la la hu hu")
+AP1=AssistantProfessor("sajid", 50012)
+AP1.show()
+AP2=AP1.MD
+AP2.show()
+     
+sajid 50012
+jinga la la hu hu
+
+class parent():
+  def values(self):
+    print("elvishhhhhhhhhhhh bhai")
+class son():
+  def values(self):
+    print("thara bhai jogindher")
+class daughter ():
+  def values(self):
+    print("jinga lala hu hu")
+
+P1=parent()
+P2=son()
+P3=daughter()
+P1.values()
+P2.values()
+P3.values()
+     
+elvishhhhhhhhhhhh bhai
+thara bhai jogindher
+jinga lala hu hu
+
+#inheritance
+class parent():
+  def property(self):
+    print("elvishhhhhhhhhhhh bhai")
+class son(parent):
+  def value(self):
+    print("thara bhai jogindher")
+class daughter (son):
+  def values(self):
+    print("jinga lala hu hu")
+s1=daughter()
+s1.values()
+s1.property()
+s1.value()
+     
+jinga lala hu hu
+elvishhhhhhhhhhhh bhai
+thara bhai jogindher
